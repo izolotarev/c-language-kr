@@ -1,0 +1,24 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "gcc build",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "-g", // Include debugging information
+        "main.c", // Replace with your file names
+        "getch.c",
+        "getop.c",
+        "stack.c",
+        "-o",
+        "calculator.exe" // Replace with the desired name of your executable
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      },
+      "problemMatcher": "$gcc"
+    }
+  ]
+}
